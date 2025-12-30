@@ -1,0 +1,178 @@
+/* src/App.css */
+
+/* Tüm uygulama alanı */
+.App {
+  min-height: 100vh;
+  background-color: #2d2f34;  
+  color: #ffffff;             
+}
+
+/* Üst bar */
+.App-header {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #444;
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navigation alanı */
+.App-nav {
+  display: flex;
+  align-items: center;        
+  gap: 16px;                  
+  font-size: 0.95rem;
+}
+
+/* Linkler */
+.App-nav a {
+  display: inline-flex;       
+  align-items: center;
+  color: #d0d3da;
+  text-decoration: none;
+}
+
+.App-nav a:hover {
+  color: #4fa3ff;
+}
+
+/* Logout butonu */
+.App-logout {
+  display: inline-flex;       
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #4fa3ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Kullanıcı etiketi (User: Renas Alp) */
+.App-userPill {
+  display: inline-flex;
+  align-items: center;        
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #3b3d42;
+  background: #26282c;
+  font-size: 0.9rem;
+  line-height: 1;             
+  opacity: 0.95;
+}
+
+/* User: etiketi */
+.App-userLabel {
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+/* İçerik alanı */
+.App-main {
+  padding: 1rem;
+}
+
+.App-spacer {
+  flex: 1; /* ✅ linkler solda kalır, User+Logout sağda sabit durur */
+}
+
+.App-userClickable {
+  cursor: pointer;
+}
+
+.App-userClickable:hover {
+  border-color: #4fa3ff;
+}
+
+.App-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: 1px solid #3b3d42;
+  background: #303238;
+  color: #ffffff;
+}
+
+.App-userText {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* User dropdown wrapper */
+.App-userWrap {
+  position: relative;
+}
+
+/* caret */
+.App-caret {
+  margin-left: 8px;
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+/* dropdown panel */
+.App-dropdown {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  min-width: 160px;
+  background: #26282c;
+  border: 1px solid #3b3d42;
+  border-radius: 8px;
+  padding: 6px;
+  z-index: 999;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* dropdown item */
+.App-ddItem {
+  width: 100%;
+  text-align: left;
+  padding: 10px 10px;
+  border: none;
+  background: transparent;
+  color: #d0d3da;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.App-ddItem:hover {
+  background: #303238;
+  color: #ffffff;
+}
+
+.App-ddDanger:hover {
+  background: rgba(255, 79, 79, 0.12);
+  color: #ffb3b3;
+}
+
+.App-ddInfo {
+  padding: 10px 10px 8px 10px;
+  border-bottom: 1px solid #3b3d42;
+  margin-bottom: 6px;
+}
+
+.App-ddInfoLabel {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin-bottom: 4px;
+}
+
+.App-ddInfoValue {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
